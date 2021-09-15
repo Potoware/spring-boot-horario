@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-@Component
+@Component("horarioInterceptor")
 public class HorarioInterceptor implements HandlerInterceptor {
 	@Value("${config.horario.apertura}")
 	private Integer apertura;
